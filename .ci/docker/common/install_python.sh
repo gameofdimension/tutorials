@@ -1,8 +1,8 @@
 #!/bin/bash
 
 set -ex
-sudo apt install python3.10
 
-python -v
-
-pip --help
+python3.10 -m venv /opt/venv/tutorials
+source /opt/venv/tutorials/bin/activate
+pip install --upgrade pip
+pip install -r ./requirements.txt

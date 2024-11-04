@@ -27,7 +27,9 @@ install_ubuntu() {
     libglfw3-dev \
     sox \
     libsox-dev \
-    libsox-fmt-all
+    libsox-fmt-all \
+    python3.10 \
+    python3.10-venv
 
   # Cleanup package manager
   apt-get autoclean && apt-get clean
